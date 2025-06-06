@@ -1,33 +1,68 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Shield, Users, DollarSign, AlertTriangle } from "lucide-react";
+import { ThemeToggle } from "@/components/theme-toggle";
+import { Shield, Users, DollarSign, AlertTriangle, Sparkles, Lock, BarChart3 } from "lucide-react";
 
 export default function Landing() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary-50 to-white">
-      {/* Hero Section */}
-      <div className="bg-gradient-to-r from-primary-600 to-primary-700 py-20">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-          <div className="flex justify-center mb-6">
-            <Shield className="h-16 w-16 text-white" />
+    <div className="min-h-screen bg-gradient-to-br from-primary-50 to-white dark:from-gray-900 dark:to-gray-800">
+      {/* Header */}
+      <header className="absolute top-0 left-0 right-0 z-50">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
+            <div className="flex items-center space-x-3">
+              <Shield className="h-8 w-8 text-primary-600 dark:text-primary-400" />
+              <span className="text-xl font-bold text-gray-900 dark:text-white">
+                Ghost Employee Hunter
+              </span>
+            </div>
+            <ThemeToggle />
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Ghost Employee Hunter
+        </div>
+      </header>
+
+      {/* Hero Section */}
+      <div className="relative bg-gradient-to-r from-primary-600 to-primary-700 dark:from-primary-800 dark:to-primary-900 py-24 pt-32">
+        <div className="absolute inset-0 bg-black/10 dark:bg-black/20"></div>
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-8 text-center">
+          <div className="flex justify-center mb-8">
+            <div className="relative">
+              <Shield className="h-20 w-20 text-white drop-shadow-lg" />
+              <Sparkles className="absolute -top-2 -right-2 h-6 w-6 text-yellow-300 animate-pulse" />
+            </div>
+          </div>
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 tracking-tight">
+            Ghost Employee
+            <br />
+            <span className="bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
+              Hunter
+            </span>
           </h1>
-          <p className="text-xl md:text-2xl text-primary-100 mb-8 max-w-3xl mx-auto">
-            Secure Payroll Anomaly Detection Platform
+          <p className="text-2xl md:text-3xl text-primary-100 dark:text-primary-200 mb-8 max-w-4xl mx-auto font-light">
+            AI-Powered Payroll Fraud Detection
           </p>
-          <p className="text-lg text-primary-200 mb-10 max-w-2xl mx-auto">
+          <p className="text-lg text-primary-200 dark:text-primary-300 mb-12 max-w-3xl mx-auto leading-relaxed">
             Identify ghost employees and payroll fraud through advanced data analysis and machine learning. 
             Protect your organization from internal payroll fraud with enterprise-grade security.
           </p>
-          <Button 
-            size="lg" 
-            className="bg-white text-primary-600 hover:bg-gray-50 px-8 py-4 text-lg font-semibold"
-            onClick={() => window.location.href = "/api/login"}
-          >
-            Sign In Securely
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button 
+              size="lg" 
+              className="bg-white text-primary-700 hover:bg-gray-50 dark:bg-gray-100 dark:text-primary-800 dark:hover:bg-white px-10 py-6 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
+              onClick={() => window.location.href = "/api/login"}
+            >
+              <Lock className="h-5 w-5 mr-2" />
+              Sign In Securely
+            </Button>
+            <Button 
+              variant="outline"
+              size="lg" 
+              className="border-white/20 text-white hover:bg-white/10 dark:border-gray-300/20 dark:text-gray-100 dark:hover:bg-white/10 px-10 py-6 text-lg font-semibold backdrop-blur-sm"
+            >
+              <BarChart3 className="h-5 w-5 mr-2" />
+              View Demo
+            </Button>
+          </div>
         </div>
       </div>
 
