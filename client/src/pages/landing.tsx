@@ -73,7 +73,7 @@ export default function Landing() {
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
               Advanced Payroll Fraud Detection
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-700 dark:text-gray-200 max-w-3xl mx-auto">
               Leverage AI-powered analytics to identify suspicious patterns and protect your organization from internal fraud
             </p>
           </div>
@@ -85,7 +85,7 @@ export default function Landing() {
                   <Users className="h-8 w-8 text-primary-600 dark:text-primary-400" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Employee Analysis</h3>
-                <p className="text-gray-600 dark:text-gray-300">
+                <p className="text-gray-700 dark:text-gray-200 leading-relaxed">
                   Comprehensive analysis of employee master data, attendance patterns, and payroll records
                 </p>
               </CardContent>
@@ -97,7 +97,7 @@ export default function Landing() {
                   <Shield className="h-8 w-8 text-success-600 dark:text-success-400" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Wi-Fi Correlation</h3>
-                <p className="text-gray-600 dark:text-gray-300">
+                <p className="text-gray-700 dark:text-gray-200 leading-relaxed">
                   Cross-reference attendance with Wi-Fi session logs to identify ghost employees
                 </p>
               </CardContent>
@@ -109,7 +109,7 @@ export default function Landing() {
                   <AlertTriangle className="h-8 w-8 text-warning-600 dark:text-warning-400" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Anomaly Detection</h3>
-                <p className="text-gray-600 dark:text-gray-300">
+                <p className="text-gray-700 dark:text-gray-200 leading-relaxed">
                   AI-powered detection of suspicious patterns and payroll irregularities
                 </p>
               </CardContent>
@@ -121,7 +121,7 @@ export default function Landing() {
                   <DollarSign className="h-8 w-8 text-error-600 dark:text-error-400" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Cost Savings</h3>
-                <p className="text-gray-600 dark:text-gray-300">
+                <p className="text-gray-700 dark:text-gray-200 leading-relaxed">
                   Calculate potential savings by identifying and eliminating fraudulent payroll entries
                 </p>
               </CardContent>
@@ -141,26 +141,26 @@ export default function Landing() {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Enterprise Security</h3>
-                  <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                  <p className="text-lg text-gray-700 dark:text-gray-200 mb-6 leading-relaxed">
                     All data is encrypted and processed according to SOC 2 Type II standards. 
                     Your HR data never leaves your secure environment and is protected with bank-grade security.
                   </p>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="flex items-center space-x-3">
                       <div className="h-2 w-2 bg-success-500 rounded-full"></div>
-                      <span className="text-gray-700 dark:text-gray-300">End-to-end encryption for all data transfers</span>
+                      <span className="text-gray-800 dark:text-gray-100 font-medium">End-to-end encryption for all data transfers</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <div className="h-2 w-2 bg-success-500 rounded-full"></div>
-                      <span className="text-gray-700 dark:text-gray-300">Zero-trust security architecture</span>
+                      <span className="text-gray-800 dark:text-gray-100 font-medium">Zero-trust security architecture</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <div className="h-2 w-2 bg-success-500 rounded-full"></div>
-                      <span className="text-gray-700 dark:text-gray-300">GDPR and CCPA compliant data handling</span>
+                      <span className="text-gray-800 dark:text-gray-100 font-medium">GDPR and CCPA compliant data handling</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <div className="h-2 w-2 bg-success-500 rounded-full"></div>
-                      <span className="text-gray-700 dark:text-gray-300">Regular security audits and penetration testing</span>
+                      <span className="text-gray-800 dark:text-gray-100 font-medium">Regular security audits and penetration testing</span>
                     </div>
                   </div>
                 </div>
