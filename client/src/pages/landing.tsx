@@ -67,61 +67,61 @@ export default function Landing() {
       </div>
 
       {/* Features Section */}
-      <div className="py-20 bg-white">
+      <div className="py-24 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
               Advanced Payroll Fraud Detection
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Leverage AI-powered analytics to identify suspicious patterns and protect your organization
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              Leverage AI-powered analytics to identify suspicious patterns and protect your organization from internal fraud
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <Card className="border-0 shadow-lg">
+            <Card className="border-0 shadow-xl dark:shadow-2xl bg-white dark:bg-gray-800 hover:shadow-2xl dark:hover:shadow-primary-500/20 transition-all duration-300 transform hover:-translate-y-2">
               <CardContent className="p-8 text-center">
-                <div className="bg-primary-50 p-4 rounded-full w-16 h-16 mx-auto mb-6 flex items-center justify-center">
-                  <Users className="h-8 w-8 text-primary-600" />
+                <div className="bg-gradient-to-br from-primary-50 to-primary-100 dark:from-primary-900 dark:to-primary-800 p-4 rounded-full w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                  <Users className="h-8 w-8 text-primary-600 dark:text-primary-400" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">Employee Analysis</h3>
-                <p className="text-gray-600">
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Employee Analysis</h3>
+                <p className="text-gray-600 dark:text-gray-300">
                   Comprehensive analysis of employee master data, attendance patterns, and payroll records
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="border-0 shadow-lg">
+            <Card className="border-0 shadow-xl dark:shadow-2xl bg-white dark:bg-gray-800 hover:shadow-2xl dark:hover:shadow-success-500/20 transition-all duration-300 transform hover:-translate-y-2">
               <CardContent className="p-8 text-center">
-                <div className="bg-success-50 p-4 rounded-full w-16 h-16 mx-auto mb-6 flex items-center justify-center">
-                  <Shield className="h-8 w-8 text-success-600" />
+                <div className="bg-gradient-to-br from-success-50 to-success-100 dark:from-success-900 dark:to-success-800 p-4 rounded-full w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                  <Shield className="h-8 w-8 text-success-600 dark:text-success-400" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">Wi-Fi Correlation</h3>
-                <p className="text-gray-600">
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Wi-Fi Correlation</h3>
+                <p className="text-gray-600 dark:text-gray-300">
                   Cross-reference attendance with Wi-Fi session logs to identify ghost employees
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="border-0 shadow-lg">
+            <Card className="border-0 shadow-xl dark:shadow-2xl bg-white dark:bg-gray-800 hover:shadow-2xl dark:hover:shadow-warning-500/20 transition-all duration-300 transform hover:-translate-y-2">
               <CardContent className="p-8 text-center">
-                <div className="bg-warning-50 p-4 rounded-full w-16 h-16 mx-auto mb-6 flex items-center justify-center">
-                  <AlertTriangle className="h-8 w-8 text-warning-600" />
+                <div className="bg-gradient-to-br from-warning-50 to-warning-100 dark:from-warning-900 dark:to-warning-800 p-4 rounded-full w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                  <AlertTriangle className="h-8 w-8 text-warning-600 dark:text-warning-400" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">Anomaly Detection</h3>
-                <p className="text-gray-600">
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Anomaly Detection</h3>
+                <p className="text-gray-600 dark:text-gray-300">
                   AI-powered detection of suspicious patterns and payroll irregularities
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="border-0 shadow-lg">
+            <Card className="border-0 shadow-xl dark:shadow-2xl bg-white dark:bg-gray-800 hover:shadow-2xl dark:hover:shadow-error-500/20 transition-all duration-300 transform hover:-translate-y-2">
               <CardContent className="p-8 text-center">
-                <div className="bg-error-50 p-4 rounded-full w-16 h-16 mx-auto mb-6 flex items-center justify-center">
-                  <DollarSign className="h-8 w-8 text-error-600" />
+                <div className="bg-gradient-to-br from-error-50 to-error-100 dark:from-error-900 dark:to-error-800 p-4 rounded-full w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                  <DollarSign className="h-8 w-8 text-error-600 dark:text-error-400" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">Cost Savings</h3>
-                <p className="text-gray-600">
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Cost Savings</h3>
+                <p className="text-gray-600 dark:text-gray-300">
                   Calculate potential savings by identifying and eliminating fraudulent payroll entries
                 </p>
               </CardContent>
@@ -131,24 +131,38 @@ export default function Landing() {
       </div>
 
       {/* Security Notice */}
-      <div className="py-16 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <Card className="border-0 shadow-lg">
-            <CardContent className="p-8">
-              <div className="flex items-start space-x-4">
-                <Shield className="h-8 w-8 text-primary-600 mt-1" />
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Enterprise Security</h3>
-                  <p className="text-gray-600 mb-4">
+      <div className="py-20 bg-gray-50 dark:bg-gray-800">
+        <div className="max-w-5xl mx-auto px-6 lg:px-8">
+          <Card className="border-0 shadow-2xl dark:shadow-primary-500/20 bg-white dark:bg-gray-900">
+            <CardContent className="p-10">
+              <div className="flex items-start space-x-6">
+                <div className="bg-gradient-to-br from-primary-100 to-primary-200 dark:from-primary-900 dark:to-primary-800 p-4 rounded-full">
+                  <Shield className="h-10 w-10 text-primary-600 dark:text-primary-400" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Enterprise Security</h3>
+                  <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
                     All data is encrypted and processed according to SOC 2 Type II standards. 
                     Your HR data never leaves your secure environment and is protected with bank-grade security.
                   </p>
-                  <ul className="text-sm text-gray-600 space-y-2">
-                    <li>• End-to-end encryption for all data transfers</li>
-                    <li>• Zero-trust security architecture</li>
-                    <li>• GDPR and CCPA compliant data handling</li>
-                    <li>• Regular security audits and penetration testing</li>
-                  </ul>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="flex items-center space-x-3">
+                      <div className="h-2 w-2 bg-success-500 rounded-full"></div>
+                      <span className="text-gray-700 dark:text-gray-300">End-to-end encryption for all data transfers</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="h-2 w-2 bg-success-500 rounded-full"></div>
+                      <span className="text-gray-700 dark:text-gray-300">Zero-trust security architecture</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="h-2 w-2 bg-success-500 rounded-full"></div>
+                      <span className="text-gray-700 dark:text-gray-300">GDPR and CCPA compliant data handling</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="h-2 w-2 bg-success-500 rounded-full"></div>
+                      <span className="text-gray-700 dark:text-gray-300">Regular security audits and penetration testing</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </CardContent>
@@ -157,21 +171,24 @@ export default function Landing() {
       </div>
 
       {/* CTA Section */}
-      <div className="py-20 bg-gradient-to-r from-primary-600 to-primary-700">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+      <div className="py-24 bg-gradient-to-r from-primary-600 to-primary-700 dark:from-primary-800 dark:to-primary-900">
+        <div className="max-w-5xl mx-auto px-6 lg:px-8 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
             Ready to Protect Your Organization?
           </h2>
-          <p className="text-xl text-primary-100 mb-8">
-            Join leading organizations using Ghost Employee Hunter to secure their payroll systems
+          <p className="text-xl text-primary-100 dark:text-primary-200 mb-12 max-w-3xl mx-auto">
+            Join leading organizations using Ghost Employee Hunter to secure their payroll systems and eliminate fraud
           </p>
-          <Button 
-            size="lg" 
-            className="bg-white text-primary-600 hover:bg-gray-50 px-8 py-4 text-lg font-semibold"
-            onClick={() => window.location.href = "/api/login"}
-          >
-            Get Started Today
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button 
+              size="lg" 
+              className="bg-white text-primary-700 hover:bg-gray-50 dark:bg-gray-100 dark:text-primary-800 dark:hover:bg-white px-10 py-6 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300"
+              onClick={() => window.location.href = "/api/login"}
+            >
+              <Lock className="h-5 w-5 mr-2" />
+              Get Started Today
+            </Button>
+          </div>
         </div>
       </div>
     </div>
