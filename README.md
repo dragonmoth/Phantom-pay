@@ -1,82 +1,126 @@
-# Phantom Pay
+# 💼 Phantom Pay
 
-A secure and efficient payroll management system built with Flask and Google's Generative AI.
-
----
-
-## 🧠 Project Description
-
-**Phantom Pay** is an intelligent payroll management system designed to simplify and secure the payroll process for businesses of all sizes. With Google's Generative AI integrated, it delivers automated analysis, anomaly detection, and smart insights — all while maintaining a user-friendly experience.
+A secure and intelligent payroll anomaly detection system powered by **Flask**, **Firebase**, and **Google Generative AI**.
 
 ---
 
-## 🚀 Key Features
+## 🚀 Project Overview
 
-- 🤖 **AI-Powered Analysis**: Leverages Google’s Generative AI to detect anomalies and payroll trends
-- 🔐 **Secure Data Management**: Protects sensitive employee and financial information
-- 🧮 **Automated Calculations**: Manages taxes, benefits, and other payroll components
-- 🧾 **Comprehensive Reports**: Exports intelligent insights as PDFs
-- 👥 **Multi-User Support**: Role-based access for admins, HR, and managers
-- 🔑 **Firebase Authentication**: Secure user logins and management
-- 📊 **System Visualizations**: Graphs and analytics for quick decision-making
+**Phantom Pay** streamlines payroll management and enhances security by detecting anomalies like ghost employees, duplicate logins, and suspicious patterns using AI-powered insights. Built for HR and finance teams, it brings transparency, automation, and compliance to payroll operations.
 
 ---
 
-## 🛠️ Tech Stack
+## 🔑 Key Features
 
-- **Backend**: Flask (Python)
-- **Frontend**: HTML/CSS/JS (Responsive UI)
-- **Database**: Flask-SQLAlchemy (SQLAlchemy ORM)
-- **AI Integration**: Google Generative AI (via Gemini Flash/Gemini Pro)
-- **Authentication**: Firebase Auth
-- **Data Analysis**: Pandas, NumPy
-- **PDF Reporting**: WeasyPrint
+- 🧠 **AI-Powered Payroll Analysis**  
+  Uses Google Generative AI to analyze patterns, detect anomalies, and flag risks.
 
----
+- 🔐 **Secure Data Handling**  
+  Sensitive financial and employee data is protected using Firebase Authentication.
 
-## 💡 Use Cases
+- ⚙️ **Automated Calculations**  
+  Handles salaries, taxes, benefits, and deductions with built-in logic.
 
-- Small to mid-sized businesses automating their payroll workflow
-- HR teams reducing manual calculation overhead
-- Organizations seeking anomaly detection & compliance insights
-- Projects exploring secure AI+payroll integration
+- 📊 **Interactive Dashboard**  
+  Visual insights for risk distribution, anomaly trends, and suspicious entities.
+
+- 📁 **PDF Report Generation**  
+  One-click export of audit-ready anomaly reports.
 
 ---
 
-## 🖼️ System Visualizations
+## 🖥️ Tech Stack
 
-1. **📈 Risk Distribution**
-2. **📉 Anomaly Trends**
-3. **🚨 Detected Anomalies**
-4. **🔐 Firebase Authentication View**
+| Layer         | Technology                           |
+|---------------|---------------------------------------|
+| 🧠 AI         | Google Generative AI API              |
+| 🧩 Backend    | Flask + SQLAlchemy + Pandas           |
+| 🔒 Auth       | Firebase Authentication               |
+| 🖼️ Frontend  | HTML5, CSS3 (dark theme), Chart.js     |
+| 🗃️ DB        | SQLite (local)                         |
+| 📄 Reports    | xhtml2pdf, markdown2                  |
 
 ---
 
-## 🔧 Prerequisites
+## 📊 System Visualizations
+
+### 🔴 Risk Distribution
+Shows proportion of high, medium, and low-risk cases.
+![image](https://github.com/user-attachments/assets/a25459ac-1d77-4bef-89de-b714c86df4e9)
+
+
+### 📈 Anomaly Trends
+Displays anomaly occurrences across years.
+![image](https://github.com/user-attachments/assets/2c5a8de6-0bd0-43e1-9751-61665877c400)
+
+
+### ⚠️ Detected Anomalies
+Detailed table of ghost employees and suspicious patterns.
+![image](https://github.com/user-attachments/assets/475f6072-c9cf-449d-a6ab-791ee87a5c32)
+
+
+### 🔐 Firebase Authentication
+Secure user logins with Firebase auth provider info.
+![image](https://github.com/user-attachments/assets/75395d38-b702-4ff2-b711-96dd16ad1d5f)
+
+---
+
+## ⚙️ Installation Guide
+
+### 📦 Prerequisites
 
 - Python 3.8+
-- pip
+- pip (Python package manager)
 - Git
 
----
-
-## 🧰 Installation
+### 🛠️ Setup Steps
 
 ```bash
-# Clone the repository
+# Clone the repo
 git clone https://github.com/dragonmoth/Phantom-pay.git
 cd Phantom-pay
 
-# Create a virtual environment
+# Create virtual environment
 python -m venv venv
-venv\Scripts\activate     # On Windows
+venv\Scripts\activate     # (on Windows)
 # OR
-source venv/bin/activate  # On macOS/Linux
+source venv/bin/activate  # (on macOS/Linux)
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Create your .env file
-# .env
-FLASK_APP=app.py
-FLASK_ENV=development
+# Set environment variables
+echo FLASK_APP=app.py > .env
+echo FLASK_ENV=development >> .env
+
+# Initialize database (if applicable)
+flask db init
+flask db migrate
+flask db upgrade
+
+###Running the Application
+Start the Flask development server:
+flask run
+Open your web browser and navigate to:
+http://localhost:5000
+
+###Features
+Secure payroll management
+Employee data management
+Automated calculations
+AI-powered insights
+User authentication and authorization
+Contributing
+Fork the repository
+Create your feature branch (git checkout -b feature/AmazingFeature)
+Commit your changes (git commit -m 'Add some AmazingFeature')
+Push to the branch (git push origin feature/AmazingFeature)
+Open a Pull Request
+
+###License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+###Contact
+Sejal Shantaram Naik - GitHub Profile
+
+Project Link: https://github.com/dragonmoth/Phantom-pay.git
