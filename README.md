@@ -65,15 +65,17 @@ Secure user logins with Firebase auth provider info.
 
 ---
 
-## ⚙️ Installation Guide
+## ⚙️ Prerequisites
 
-### 📦 Prerequisites
+Before you begin, ensure you have the following installed:
 
-- Python 3.8+
-- pip (Python package manager)
-- Git
+- Python 3.8 or higher  
+- pip (Python package installer)  
+- Git  
 
-### 🛠️ Setup Steps
+---
+
+## 💻 Installation Steps
 
 ```bash
 # Clone the repo
@@ -97,31 +99,48 @@ echo FLASK_ENV=development >> .env
 flask db init
 flask db migrate
 flask db upgrade
+```
 
-###Running the Application
-Start the Flask development server:
+---
+
+## ▶️ Running the Application
+
+```bash
 flask run
-Open your web browser and navigate to:
-http://localhost:5000
-'''
+```
 
-Features
-Secure payroll management
-Employee data management
-Automated calculations
-AI-powered insights
-User authentication and authorization
-Contributing
-Fork the repository
-Create your feature branch (git checkout -b feature/AmazingFeature)
-Commit your changes (git commit -m 'Add some AmazingFeature')
-Push to the branch (git push origin feature/AmazingFeature)
-Open a Pull Request
+Open your web browser and navigate to:  
+[http://localhost:5000](http://localhost:5000)
 
-##License
-This project is licensed under the MIT License - see the LICENSE file for details.
+---
 
-##Contact
-Sejal Shantaram Naik - GitHub Profile
+## 🧩 Contributing
 
-Project Link: https://github.com/dragonmoth/Phantom-pay.git
+```bash
+# Fork the repository
+# Create your feature branch
+git checkout -b feature/AmazingFeature
+
+# Commit your changes
+git commit -m "Add some AmazingFeature"
+
+# Push to the branch
+git push origin feature/AmazingFeature
+
+# Open a Pull Request
+```
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** – see the `LICENSE` file for details.
+
+---
+
+## 📬 Contact
+
+**Sejal Shantaram Naik**  
+GitHub: [@dragonmoth](https://github.com/dragonmoth)
+
+🔗 **Project Link**: [https://github.com/dragonmoth/Phantom-pay](https://github.com/dragonmoth/Phantom-pay)
