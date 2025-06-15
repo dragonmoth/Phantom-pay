@@ -104,7 +104,7 @@ flask run
 Open your web browser and navigate to:
 http://localhost:5000
 
-###Features
+##Features
 Secure payroll management
 Employee data management
 Automated calculations
@@ -117,10 +117,10 @@ Commit your changes (git commit -m 'Add some AmazingFeature')
 Push to the branch (git push origin feature/AmazingFeature)
 Open a Pull Request
 
-###License
+##License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-###Contact
+##Contact
 Sejal Shantaram Naik - GitHub Profile
 
 Project Link: https://github.com/dragonmoth/Phantom-pay.git
