@@ -105,7 +105,7 @@ Open your web browser and navigate to:
 http://localhost:5000
 '''
 
-##Features
+Features
 Secure payroll management
 Employee data management
 Automated calculations
