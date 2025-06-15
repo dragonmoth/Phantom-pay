@@ -103,6 +103,7 @@ Start the Flask development server:
 flask run
 Open your web browser and navigate to:
 http://localhost:5000
+'''
 
 ##Features
 Secure payroll management
